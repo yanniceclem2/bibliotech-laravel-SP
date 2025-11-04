@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             CategorieSeeder::class,  // Créer d'abord les catégories
             LivreSeeder::class,      // Puis les livres avec relations
+            SalleSeeder::class,      // Seeder pour les salles (exemple)
         ]);
     }
 }

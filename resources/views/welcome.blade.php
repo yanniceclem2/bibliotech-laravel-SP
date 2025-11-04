@@ -16,6 +16,9 @@
                 <a href="{{ route('livres.index') }}" class="btn btn-light btn-lg">
                     <i class="fas fa-search"></i> Explorer le Catalogue
                 </a>
+                    <a href="{{ route('salles.index') }}" class="btn btn-outline-light btn-lg ms-2">
+                        <i class="fas fa-door-open"></i> Consulter les Salles
+                    </a>
             </div>
         </div>
     </div>

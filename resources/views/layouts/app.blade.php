@@ -93,8 +93,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                                                <a class="nav-link" href="{{ route('livres.index') }}">
+                        <a class="nav-link {{ request()->routeIs('livres.*') ? 'active' : '' }}" href="{{ route('livres.index') }}">
                             <i class="fas fa-book"></i> Catalogue
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('salles.*') ? 'active' : '' }}" href="{{ route('salles.index') }}">
+                            <i class="fas fa-door-open"></i> Salles
                         </a>
                     </li>
                     <li class="nav-item">
